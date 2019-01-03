@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sudokucracker.ex1.sudokucracker">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label fx:id="labal1" alignment="CENTER" layoutX="232.0" layoutY="28.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Button fx:id="Button1" layoutX="87.0" layoutY="118.0" mnemonicParsing="false" onAction="#ButtonPresssed" text="Start to crack" />
+            <TextField fx:id="TF1" layoutX="228.0" layoutY="77.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF9" layoutX="530.0" layoutY="77.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF8" layoutX="493.0" layoutY="77.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF7" layoutX="458.0" layoutY="77.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF6" layoutX="411.0" layoutY="76.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF5" layoutX="374.0" layoutY="76.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF4" layoutX="340.0" layoutY="76.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF3" layoutX="295.0" layoutY="77.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF2" layoutX="263.0" layoutY="77.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF10" layoutX="228.0" layoutY="104.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF18" layoutX="530.0" layoutY="104.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF17" layoutX="493.0" layoutY="104.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF16" layoutX="458.0" layoutY="104.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF15" layoutX="411.0" layoutY="103.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF14" layoutX="374.0" layoutY="103.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF13" layoutX="340.0" layoutY="103.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF12" layoutX="295.0" layoutY="104.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF11" layoutX="263.0" layoutY="104.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF19" layoutX="228.0" layoutY="131.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF27" layoutX="530.0" layoutY="131.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF26" layoutX="493.0" layoutY="131.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF25" layoutX="458.0" layoutY="131.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF24" layoutX="411.0" layoutY="130.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF23" layoutX="374.0" layoutY="130.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF22" layoutX="340.0" layoutY="130.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF21" layoutX="295.0" layoutY="131.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF20" layoutX="263.0" layoutY="131.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF28" layoutX="228.0" layoutY="169.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF36" layoutX="530.0" layoutY="169.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF35" layoutX="493.0" layoutY="169.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF34" layoutX="458.0" layoutY="169.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF33" layoutX="411.0" layoutY="168.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF32" layoutX="374.0" layoutY="168.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF31" layoutX="340.0" layoutY="168.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF30" layoutX="295.0" layoutY="169.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF29" layoutX="263.0" layoutY="169.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF37" layoutX="228.0" layoutY="199.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF45" layoutX="530.0" layoutY="199.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF44" layoutX="493.0" layoutY="199.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF43" layoutX="458.0" layoutY="199.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF42" layoutX="411.0" layoutY="198.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF41" layoutX="374.0" layoutY="198.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF40" layoutX="340.0" layoutY="198.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF39" layoutX="295.0" layoutY="199.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF38" layoutX="263.0" layoutY="199.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF46" layoutX="228.0" layoutY="226.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF54" layoutX="530.0" layoutY="226.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF53" layoutX="493.0" layoutY="226.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF52" layoutX="458.0" layoutY="226.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF51" layoutX="411.0" layoutY="225.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF50" layoutX="374.0" layoutY="225.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF49" layoutX="340.0" layoutY="225.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF48" layoutX="295.0" layoutY="226.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF47" layoutX="263.0" layoutY="226.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF55" layoutX="228.0" layoutY="262.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF63" layoutX="530.0" layoutY="262.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF62" layoutX="493.0" layoutY="262.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF61" layoutX="458.0" layoutY="262.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF60" layoutX="411.0" layoutY="261.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF59" layoutX="374.0" layoutY="261.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF58" layoutX="340.0" layoutY="261.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF57" layoutX="295.0" layoutY="262.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF56" layoutX="263.0" layoutY="262.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF64" layoutX="228.0" layoutY="292.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF72" layoutX="530.0" layoutY="292.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF71" layoutX="493.0" layoutY="292.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF70" layoutX="458.0" layoutY="292.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF69" layoutX="411.0" layoutY="291.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF68" layoutX="374.0" layoutY="291.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF67" layoutX="340.0" layoutY="291.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF66" layoutX="295.0" layoutY="292.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF65" layoutX="263.0" layoutY="292.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF73" layoutX="228.0" layoutY="319.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF81" layoutX="530.0" layoutY="319.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF80" layoutX="493.0" layoutY="319.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF79" layoutX="458.0" layoutY="319.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF78" layoutX="411.0" layoutY="318.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF77" layoutX="374.0" layoutY="318.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF76" layoutX="340.0" layoutY="318.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF75" layoutX="295.0" layoutY="319.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+            <TextField fx:id="TF74" layoutX="263.0" layoutY="319.0" prefHeight="23.0" prefWidth="25.0" text="0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
